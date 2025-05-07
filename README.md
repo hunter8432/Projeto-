@@ -1,2 +1,2 @@
-# Projeto-
-git clone https://github.com/hunter8432/Projeto-.git
+inicio dos estudos devops
+
