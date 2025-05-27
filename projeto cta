@@ -1,1 +1,26 @@
+from datetime import date
+
+# Obtém o ano atual
+atual = date.today().year
+
+# Obtém o ano de nascimento do usuário como entrada
+nasc = int(input('Ano de nascimento:'))
+
+# Calcula a idade da pessoa
+idade = atual - nasc
+
+# Imprime informações sobre a idade da pessoa
+print(f'Quem nasceu em {nasc} tem {idade} anos em {atual}')
+
+# Verifica se a pessoa deve se alistar no serviço militar
+if idade == 18:
+    print('Você deve se alistar imediatamente')
+elif nasc < 18:
+    saldo = 18 - idade
+    ano = atual + saldo
+    print(f'Você vai se alistar daqui a {saldo} ano(s), em {ano}')
+else:
+    saldo = idade - 18
+    ano = atual - saldo
+    print(f'Você já deveria ter se alistado há {saldo} ano(s), em {ano}')
 
